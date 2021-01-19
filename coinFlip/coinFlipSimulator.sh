@@ -12,4 +12,13 @@ else
 	twin=$(($twin+1))
 fi
 }
+function coinFlipSimulation() {
+echo "Enter number of times to execute"
+read n
+for (( i=0 ; $i < n ; i++ ))
+do
+	coinFlip
+done
+}
 coinFlip
+coinFlipSimulation
